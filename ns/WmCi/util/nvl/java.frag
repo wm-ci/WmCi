@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">nvl</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgY3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7ClN0cmluZyBpbnB1dCA9
+IGN1cnNvci5maXJzdCgiaW5wdXQiKSA/IChTdHJpbmcpY3Vyc29yLmdldFZhbHVlKCkgOiBudWxs
+OwpTeXN0ZW0ub3V0LnByaW50bG4oImlucHV0WyIgKyBpbnB1dCArICJdIik7ClN0cmluZyBkZWZh
+dWx0VmFsdWUgPSBjdXJzb3IuZmlyc3QoImRlZmF1bHQiKSA/IChTdHJpbmcpY3Vyc29yLmdldFZh
+bHVlKCkgOiBudWxsOwpib29sZWFuIHRyZWF0RW1wdHlBc051bGwgPSBjdXJzb3IuZmlyc3QoInRy
+ZWF0RW1wdHlBc051bGwiKSA/ICgoQm9vbGVhbiljdXJzb3IuZ2V0VmFsdWUoKSkvKi5lcXVhbHMo
+InRydWUiKSovIDogZmFsc2U7CgpjdXJzb3IuaW5zZXJ0QWZ0ZXIoInZhbHVlIiwgVXRpbC5udmwo
+aW5wdXQsIGRlZmF1bHRWYWx1ZSwgdHJlYXRFbXB0eUFzTnVsbCkpOwpjdXJzb3IuaW5zZXJ0QWZ0
+ZXIoInBhcmFtcyIsICJpbnB1dFsiICsgaW5wdXQgKyAiXSBkZWZhdWx0VmFsdWVbIiArIGRlZmF1
+bHRWYWx1ZSArICJdIHRyZWF0RW1wdHlBc051bGxbIiArIHRyZWF0RW1wdHlBc051bGwgKyAiXSIp
+OwoKY3Vyc29yLmRlc3Ryb3koKTs=</value>
+</Values>

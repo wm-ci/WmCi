@@ -16,7 +16,7 @@
       <array name="rec_fields" type="record" depth="1">
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Test grouping name</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
@@ -34,7 +34,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Test case name</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
@@ -52,7 +52,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Element name to be tested</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
@@ -70,7 +70,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Test element input value</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>
@@ -85,7 +85,7 @@
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
-          <value name="node_comment"></value>
+          <value name="node_comment">Value to be compared</value>
           <record name="node_hints" javaclass="com.wm.util.Values">
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>

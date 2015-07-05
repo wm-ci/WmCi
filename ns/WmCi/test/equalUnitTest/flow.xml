@@ -9,11 +9,11 @@
   <COMMENT></COMMENT>
 </MAP>
 
-<INVOKE TIMEOUT="" SERVICE="WmCi.assertion:equal2" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="WmCi.assertion:equal" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="WmCi.assertion:equal2" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="WmCi.assertion:equal" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->

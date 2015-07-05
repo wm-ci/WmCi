@@ -4,7 +4,7 @@
   <value name="svc_type">java</value>
   <value name="svc_subtype">default</value>
   <value name="svc_sigtype">java 3.5</value>
-  <value name="svc_spec">WmCi.spec:BasicAssert</value>
+  <value name="svc_spec">WmCi.spec:BasicTestCase</value>
   <value name="node_comment"></value>
   <value name="stateless">yes</value>
   <value name="caching">no</value>

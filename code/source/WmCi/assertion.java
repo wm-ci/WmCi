@@ -1,7 +1,7 @@
 package WmCi;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-07-05 01:08:58 MST
+// -----( CREATED: 2015-07-05 22:58:33 MST
 // -----( ON-HOST: 192.168.0.16
 
 import com.wm.data.*;
@@ -35,7 +35,7 @@ public final class assertion
         throws ServiceException
 	{
 		// --- <<IS-START(equal)>> ---
-		// @specification WmCi.spec:BasicTestCase
+		// @specification WmCi.spec:BasicAssert
 		// @sigtype java 3.5
 		IDataCursor pipeCursor = pipeline.getCursor();
 		
@@ -45,6 +45,39 @@ public final class assertion
 			
 			String initTime = Util.getTimeStamp();		
 			Result result = Eval.equal(input, compare);	
+			String endTime = Util.getTimeStamp();		
+			
+			// Add test result to output document
+			IData[] outResultList = buildTestResults(pipeCursor, result, initTime, endTime);
+			
+			// add the outputDoc to the pipeline
+			IDataUtil.put(pipeCursor, "resultList", outResultList);
+			
+		} finally {
+			// destroy the pipelineCursor
+			pipeCursor.destroy();
+		}
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
+	public static final void matches (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(matches)>> ---
+		// @specification WmCi.spec:BasicAssert
+		// @sigtype java 3.5
+		IDataCursor pipeCursor = pipeline.getCursor();
+		
+		try {
+			String input = pipeCursor.first("input") ? (String)pipeCursor.getValue() : null;
+			String compare = pipeCursor.first("compare") ? (String)pipeCursor.getValue() : null;
+			
+			String initTime = Util.getTimeStamp();		
+			Result result = Eval.matches(input, compare);	
 			String endTime = Util.getTimeStamp();		
 			
 			// Add test result to output document

@@ -1,7 +1,7 @@
 package WmCi;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-07-07 21:59:08 MST
+// -----( CREATED: 2015-07-07 23:53:14 MST
 // -----( ON-HOST: 192.168.0.16
 
 import com.wm.data.*;
@@ -78,6 +78,39 @@ public final class assertion
 			
 			String initTime = Util.getTimeStamp();		
 			Result result = Eval.equal(input, compare);	
+			String endTime = Util.getTimeStamp();		
+			
+			// Add test result to output document
+			IData[] outResultList = buildTestResults(pipeCursor, result, initTime, endTime);
+			
+			// add the outputDoc to the pipeline
+			IDataUtil.put(pipeCursor, "resultList", outResultList);
+			
+		} finally {
+			// destroy the pipelineCursor
+			pipeCursor.destroy();
+		}
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
+	public static final void greatThan (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(greatThan)>> ---
+		// @specification WmCi.spec:BasicAssert
+		// @sigtype java 3.5
+		IDataCursor pipeCursor = pipeline.getCursor();
+		
+		try {
+			String input = pipeCursor.first("input") ? (String)pipeCursor.getValue() : null;
+			String compare = pipeCursor.first("compare") ? (String)pipeCursor.getValue() : null;
+			
+			String initTime = Util.getTimeStamp();		
+			Result result = Eval.greatThan(input, compare);	
 			String endTime = Util.getTimeStamp();		
 			
 			// Add test result to output document

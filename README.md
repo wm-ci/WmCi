@@ -6,7 +6,7 @@ TODO: about intro
 ## Testing Framework
 TODO:
 
-   |IS Java Service|
+   |IS Java Service|.
 ---|---|---
 1.|WmCi.eval:equal|
 2.|WmCi.eval:notEqual|

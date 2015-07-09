@@ -44,4 +44,8 @@
 <INVOKE TIMEOUT="" SERVICE="WmCi.test.assertion:isNullUnitTest" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="WmCi.test.assertion:isNotNullUnitTest" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>

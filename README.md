@@ -28,8 +28,7 @@ TODO: Expand the testing framework developing your own *Custom Assertions*, just
    |IS Specification|
 ---|---|---
 1.|WmCi.spec:BasicAssert
-2.|WmCi.spec:BasicTestCase
-3.|WmCi.spec:BasicUnitTest
+2.|WmCi.spec:BasicUnitTest
 
 
 ## Utility API

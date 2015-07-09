@@ -1,7 +1,7 @@
 package WmCi;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-07-05 22:14:34 MST
+// -----( CREATED: 2015-07-09 00:53:58 MST
 // -----( ON-HOST: 192.168.0.16
 
 import com.wm.data.*;
@@ -9,6 +9,7 @@ import com.wm.util.Values;
 import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
+import com.wmci.assertion.*;
 import com.wmci.util.*;
 // --- <<IS-END-IMPORTS>> ---
 
@@ -28,11 +29,40 @@ public final class util
 
 
 
+	public static final void buildPairConditionsArray (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(buildPairConditionsArray)>> ---
+		// @sigtype java 3.5
+		// [i] field:0:required input
+		// [o] field:1:required keyPairConditions
+		IDataCursor pipeCursor = pipeline.getCursor();
+		
+		try {
+			String input = pipeCursor.first("input") ? (String)pipeCursor.getValue() : null;
+			
+			String[] keyPairConditions = Util.buildPairConditionsArray(input);
+			
+			pipeCursor.insertAfter("keyPairConditions", keyPairConditions);
+			
+		} finally {
+			// destroy the pipelineCursor
+			pipeCursor.destroy();
+		}
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
 	public static final void doNotMapNullOrBlanks (IData pipeline)
         throws ServiceException
 	{
 		// --- <<IS-START(doNotMapNullOrBlanks)>> ---
 		// @sigtype java 3.5
+		// [i] field:0:required input
+		// [o] field:0:required value
 		IDataCursor cursor = pipeline.getCursor();
 		String input = cursor.first("input") ? (String)cursor.getValue() : null;
 		

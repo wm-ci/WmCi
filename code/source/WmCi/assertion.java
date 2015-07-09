@@ -1,7 +1,7 @@
 package WmCi;
 
 // -----( IS Java Code Template v1.2
-// -----( CREATED: 2015-07-08 23:43:12 MST
+// -----( CREATED: 2015-07-09 00:22:59 MST
 // -----( ON-HOST: 192.168.0.16
 
 import com.wm.data.*;
@@ -45,6 +45,47 @@ public final class assertion
 			
 			String initTime = Util.getTimeStamp();		
 			Result result = Eval.contains(input, compare);	
+			String endTime = Util.getTimeStamp();		
+			
+			// Add test result to output document
+			IData[] outResultList = buildTestResults(pipeCursor, result, initTime, endTime);
+			
+			// add the outputDoc to the pipeline
+			IDataUtil.put(pipeCursor, "resultList", outResultList);
+			
+		} finally {
+			// destroy the pipelineCursor
+			pipeCursor.destroy();
+		}
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
+	public static final void decode (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(decode)>> ---
+		// @sigtype java 3.5
+		// [i] field:0:required test
+		// [i] field:0:required case
+		// [i] field:0:required element
+		// [i] field:0:required input
+		// [i] field:0:required compare
+		// [i] field:1:required conditions
+		// [i] recref:1:required resultList WmCi.docs:testCaseResult
+		// [o] recref:1:required resultList WmCi.docs:testCaseResult
+		IDataCursor pipeCursor = pipeline.getCursor();
+		
+		try {
+			String input = pipeCursor.first("input") ? (String)pipeCursor.getValue() : null;
+			String compare = pipeCursor.first("compare") ? (String)pipeCursor.getValue() : null;
+			String[] keyPairConditions = pipeCursor.first("keyPairConditions") ? (String[])pipeCursor.getValue() : null;
+			
+			String initTime = Util.getTimeStamp();		
+			Result result = Eval.decode(input, compare, keyPairConditions);	
 			String endTime = Util.getTimeStamp();		
 			
 			// Add test result to output document

@@ -28,4 +28,8 @@
 <INVOKE TIMEOUT="" SERVICE="WmCi.test.assertion:greatThanUnitTest" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="WmCi.test.assertion:greatThanEqualUnitTest" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>

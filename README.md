@@ -4,7 +4,7 @@
 TODO: about intro
 
 ## Testing Framework
-TODO:
+TODO: Thias are the basic assertions
 
    |IS Java Service|.
 ---|---|---
@@ -23,7 +23,7 @@ TODO:
 
 
 ## Specifications
-TODO:
+TODO: Expand the testing framework developing your own *Custom Assertions*, just create `IS Services` implementing the `Basic Specifications`:
 
    |IS Specification|
 ---|---|---

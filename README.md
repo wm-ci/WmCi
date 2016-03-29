@@ -1,8 +1,6 @@
 # WmCi
 > A lighter *Testing Automation Framework* for [WebMethods Integration Server](http://www.softwareag.com/corporate/products/webmethods_integration/integration/overview/default.asp), pointed to maximize your *Continuous Integration* capabilities. The backend for the `Flows` and `Java Services` are imported from the `WmCiJava.jar` file, and no other Jar dependency is required on installation, you can see more on [WmCiJava ](https://github.com/wm-ci/WmCiJava/tree/master) project for backend details.
 
-[comment]: <> ([See WmCi official site](http://WmCi.io))
-
 [How to install](#how-to-install)
 
 ## Basic Assertions
@@ -35,7 +33,6 @@ Yo can extend the testing framework developing your own *Custom Assertions* or a
 
 
 ## Utility API
-[comment]: <> (TODO:)
 And extra utility Api with useful functions that will help you to ease your work while developing flow services.
 
    |IS Java Service||
@@ -47,4 +44,4 @@ And extra utility Api with useful functions that will help you to ease your work
 
 
 ## How to install
-[comment]: <> (TODO:)
+TODO:

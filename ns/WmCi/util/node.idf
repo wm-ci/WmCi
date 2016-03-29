@@ -10,6 +10,7 @@
   <array name="implements" type="value" depth="1">
   </array>
   <array name="imports" type="value" depth="1">
+    <value>com.wmci.assertion.*</value>
     <value>com.wmci.util.*</value>
   </array>
 </Values>
